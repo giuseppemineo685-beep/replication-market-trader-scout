@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trader Scout — Replication Market</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; background: #fafbfc; color: #131829; }
+  @media (prefers-color-scheme: dark) { body { background: #0a0c14; color: #f4f7fa; } }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  .sub { color: #6b7280; font-size: 0.9rem; margin-bottom: 24px; }
+  .stats { display: flex; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+  .stat { border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 16px; }
+  @media (prefers-color-scheme: dark) { .stat { border-color: #232a3d; } }
+  .stat .n { font-size: 1.3rem; font-weight: 600; font-family: ui-monospace, monospace; }
+  .stat .l { font-size: 0.75rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.03em; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  th { text-align: left; padding: 10px 12px; border-bottom: 2px solid #e5e7eb; font-size: 0.75rem; text-transform: uppercase; color: #6b7280; letter-spacing: 0.03em; }
+  td { padding: 10px 12px; border-bottom: 1px solid #eef0f2; }
+  @media (prefers-color-scheme: dark) { th { border-color: #232a3d; } td { border-color: #1a2030; } }
+  .mono { font-family: ui-monospace, "SF Mono", monospace; }
+  .addr { color: #6b7280; font-size: 0.75rem; }
+  .num { text-align: right; }
+  .pos { color: #16a34a; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #eef2ff; color: #4338ca; font-size: 0.75rem; }
+  @media (prefers-color-scheme: dark) { .badge { background: #1e2547; color: #a5b4fc; } }
+  .note { margin-top: 24px; font-size: 0.8rem; color: #6b7280; line-height: 1.5; }
+  .empty { padding: 40px; text-align: center; color: #6b7280; }
+</style>
+</head>
+<body>
+  <h1>Trader Scout</h1>
+  <p class="sub">Traders reales y activos de Polymarket - actualizado 2026-08-26 10:29 UTC</p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">88</div><div class="l">candidatos evaluados</div></div>
+    <div class="stat"><div class="n">33</div><div class="l">activos + rentables (7/30/60d)</div></div>
+    <div class="stat"><div class="n">17</div><div class="l">mostrados (diversificado)</div></div>
+  </div>
+
+  <table><thead><tr><th>Trader</th><th>Categoría</th><th class='num'>Trades 7d</th><th class='num'>ROI 7d</th><th class='num'>ROI 30d</th><th class='num'>ROI 60d</th></tr></thead><tbody>
+        <tr>
+          <td class="mono">Mysaria<br><span class="addr">0xe40a...e4a2</span></td>
+          <td><span class="badge">Sports</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+190.8%</td>
+          <td class="mono num pos">+210.9%</td>
+          <td class="mono num pos">+210.9%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">betterfasterstronger<br><span class="addr">0x13fa...954c</span></td>
+          <td><span class="badge">Sports</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+153.2%</td>
+          <td class="mono num pos">+107.6%</td>
+          <td class="mono num pos">+107.6%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">Bonereaper<br><span class="addr">0xeebd...ba30</span></td>
+          <td><span class="badge">Crypto</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+51.5%</td>
+          <td class="mono num pos">+51.1%</td>
+          <td class="mono num pos">+52.1%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">vito3corleone<br><span class="addr">0x34dd...fd83</span></td>
+          <td><span class="badge">Other</span></td>
+          <td class="mono num">56</td>
+          <td class="mono num pos">+50.9%</td>
+          <td class="mono num pos">+50.9%</td>
+          <td class="mono num pos">+50.9%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">0x076d...8d4c<br><span class="addr">0x076d...8d4c</span></td>
+          <td><span class="badge">Sports</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+51.7%</td>
+          <td class="mono num pos">+48.7%</td>
+          <td class="mono num pos">+49.9%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">HomeRunHazard<br><span class="addr">0x5268...135d</span></td>
+          <td><span class="badge">Other</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+50.1%</td>
+          <td class="mono num pos">+49.2%</td>
+          <td class="mono num pos">+48.0%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">kekasaur<br><span class="addr">0xf5f9...87b0</span></td>
+          <td><span class="badge">Other</span></td>
+          <td class="mono num">76</td>
+          <td class="mono num pos">+48.0%</td>
+          <td class="mono num pos">+49.4%</td>
+          <td class="mono num pos">+50.0%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">SDTrading<br><span class="addr">0x16bb...8492</span></td>
+          <td><span class="badge">Other</span></td>
+          <td class="mono num">140</td>
+          <td class="mono num pos">+47.4%</td>
+          <td class="mono num pos">+49.5%</td>
+          <td class="mono num pos">+49.0%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">Sassy-Bucket<br><span class="addr">0x4bff...fc26</span></td>
+          <td><span class="badge">Sports</span></td>
+          <td class="mono num">47</td>
+          <td class="mono num pos">+54.7%</td>
+          <td class="mono num pos">+51.0%</td>
+          <td class="mono num pos">+46.9%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">ripley86alien<br><span class="addr">0x168a...0d24</span></td>
+          <td><span class="badge">Other</span></td>
+          <td class="mono num">51</td>
+          <td class="mono num pos">+43.0%</td>
+          <td class="mono num pos">+43.0%</td>
+          <td class="mono num pos">+43.0%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">alpheclabs<br><span class="addr">0xb4d2...ce99</span></td>
+          <td><span class="badge">Sports</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+44.5%</td>
+          <td class="mono num pos">+48.2%</td>
+          <td class="mono num pos">+42.7%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">casualbet2020<br><span class="addr">0x65c1...2988</span></td>
+          <td><span class="badge">Esports</span></td>
+          <td class="mono num">53</td>
+          <td class="mono num pos">+45.5%</td>
+          <td class="mono num pos">+42.4%</td>
+          <td class="mono num pos">+43.2%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592<br><span class="addr">0xe16d...5e30</span></td>
+          <td><span class="badge">Esports</span></td>
+          <td class="mono num">450</td>
+          <td class="mono num pos">+42.3%</td>
+          <td class="mono num pos">+42.3%</td>
+          <td class="mono num pos">+42.2%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">TeGeeLP<br><span class="addr">0xe100...4d41</span></td>
+          <td><span class="badge">Esports</span></td>
+          <td class="mono num">22</td>
+          <td class="mono num pos">+48.5%</td>
+          <td class="mono num pos">+40.7%</td>
+          <td class="mono num pos">+40.7%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">SPCEXBUYER<br><span class="addr">0xcd30...f316</span></td>
+          <td><span class="badge">Esports</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+40.2%</td>
+          <td class="mono num pos">+40.5%</td>
+          <td class="mono num pos">+40.4%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">0xF201A19b43471261A3c1Ba9247335d55270e527e-1763824114616<br><span class="addr">0xf201...527e</span></td>
+          <td><span class="badge">Esports</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+42.1%</td>
+          <td class="mono num pos">+40.1%</td>
+          <td class="mono num pos">+39.0%</td>
+        </tr>
+
+        <tr>
+          <td class="mono">0xf705...3ca7<br><span class="addr">0xf705...3ca7</span></td>
+          <td><span class="badge">Crypto</span></td>
+          <td class="mono num">500</td>
+          <td class="mono num pos">+44.0%</td>
+          <td class="mono num pos">+35.9%</td>
+          <td class="mono num pos">+29.6%</td>
+        </tr></tbody></table>
+
+  <p class="note">
+    Criterios: mínimo 10 operaciones en los últimos 7 días (actividad real, no una apuesta grande
+    de hace meses que recién resolvió) + profit real (de posiciones cerradas, no una suma ingenua de flujo de
+    trades) positivo en 7, 30 <strong>y</strong> 60 días a la vez + lista diversificada por categoría (máx.
+    5 por rama). No es asesoría de inversión, el rendimiento pasado no garantiza resultados
+    futuros.
+  </p>
+</body>
+</html>
